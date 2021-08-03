@@ -1,5 +1,5 @@
 // import function from local file
-const findShortestString = require("./find-longest-string");
+const findShortestString = require("./find-shortest-string");
 
 test("findShortestString finds the shortest string in an array", () => {
   expect(findShortestString(["it", "is", "a", "nice", "day"])).toBe("a");
@@ -9,5 +9,5 @@ test("findShortestString finds the shortest string in an array", () => {
 test("findShortestString returns the earlier string in cases of joint shortest strings", () => {
   expect(findShortestString(["brave", "dance"])).toBe("brave");
   expect(findShortestString(["how", "are", "you"])).toBe("how");
-  expect(findShortestString(["hello", "wired", ""])).toBe("hello");
+  expect(findShortestString(["hello", "wired"])).toBe("hello");
 });
